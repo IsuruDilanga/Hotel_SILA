@@ -23,3 +23,7 @@ function videoScroll() {
   }
 
 }
+
+document.querySelector(".learnMore").onclick = function(){
+  location.href = "#middle-of-page";
+}

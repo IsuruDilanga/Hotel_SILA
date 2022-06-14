@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
-
     justify-content: center;
     align-items: center;
     text-align: center;
-    
 }
 
 header{
@@ -60,6 +62,7 @@ h4 {
     border-radius: 20px;
     border-color: rgba(255, 255, 255, 0);
     color: rgb(52, 52, 102);
+    cursor: pointer;
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
@@ -73,9 +76,9 @@ h4 {
 .learnMore:hover {
     border-color: rgba(255, 255, 255, 0);
     color: white;
+    cursor: pointer;
     background-color: rgba(52, 52, 102, 0.911);;
 }
-  
   
 .flex { /*Flexbox for containers*/
     display: flex;
@@ -103,7 +106,6 @@ h4 {
     text-align:center;
     background-color: rgb(12, 65, 145);
 }
-
   
 .parallax > use {
     animation: move-forever 25s cubic-bezier(.55,.5,.45,.5) infinite;
@@ -174,7 +176,6 @@ h4 {
 }
   
 /*********************** TRAVEL & ENJOY YOUR LIFE *************/
-
   
 h4 {
     color: rgb(255, 255, 255);
@@ -314,6 +315,242 @@ h4 span:nth-child(7) {
     margin-bottom: 100px;
     border-color: black;
 }
+
+/***************************** FORTH PAGE **********************/
+
+.fourth-page table {
+    margin: auto 15% 5% 15%;
+}
+
+.facilities{
+    color: #223ac2;
+    font-size: 50px;
+    font-family: 'Alfa Slab One', cursive;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.adventuer{
+    color: rgb(87, 86, 86);
+    font-family: "Montserrat Medium";
+    font-size: 25px;
+    font-weight: 500;
+    margin-left: 10%;
+    text-align: left;
+}
+
+/******** image travel plan *****************/
+
+.container {
+    position: relative;
+}
+  
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+  
+.overlay {
+    position: absolute;
+    width:450px; 
+    height: 500px;
+    top: 0;
+    opacity: 0;
+    transition: 1s ease;
+    background-color: #031683;
+}
+
+.overlay:hover {
+    transform: scale(1.05);
+}
+  
+.container:hover .overlay {
+    opacity: 0.8;
+}
+  
+.text {
+    color: white;
+    font-size: 35px;
+    font-family: 'Alfa Slab One', cursive;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.adven {
+    margin-left: 10%;
+}
+
+/************************* BOOKING **********************/
+
+.bokking form{
+    background-color: rgb(226, 226, 226);
+    position: absolute;
+    padding: 5%;
+    left: 50%;
+    margin-top: 300px;
+    transform: translate(-50%,-50%);
+}
+
+.bokking h2{
+    color: #223ac2;
+    font-size: 40px;
+    font-family: 'Alfa Slab One', cursive;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+
+.country {
+    border: 1px solid rgb(192, 191, 191);
+    box-shadow: 0 0 10px rgb(192, 191, 191);
+    border-radius: 10px;
+    font-family: "Montserrat Medium";
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding: 10px 5px;
+    position: absolute;
+    left: 9.2%;
+    width: 80%;
+}
+
+.country:hover{
+    border: 1px solid #223ac2;
+    box-shadow: 0 0 10px #223ac2;
+}
+
+.checkinlable, .checkoutlable{
+    color: #223ac2;
+    font-family: "Montserrat Medium";
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.checkindate, .checkoutdate{
+    border: 1px solid rgb(192, 191, 191);
+    box-shadow: 0 0 10px rgb(192, 191, 191);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px; 
+    font-family: "Montserrat Medium";
+    margin-bottom: 20px;
+    padding: 10px 81px;
+}
+
+.checkindate:hover, .checkoutdate:hover {
+    border: 1px solid #223ac2;
+    box-shadow: 0 0 10px #223ac2;
+}
+
+.rooms, .adults, .children{
+    border: 1px solid rgb(192, 191, 191);
+    box-shadow: 0 0 10px rgb(192, 191, 191);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px; 
+    font-family: "Montserrat Medium";
+    margin-bottom: 20px;
+    padding: 10px 42px;
+}
+
+.rooms:hover, .adults:hover, .children:hover{
+    border: 1px solid #223ac2;
+    box-shadow: 0 0 10px #223ac2;
+}
+
+.mail, .phone{
+    border: 1px solid rgb(192, 191, 191);
+    box-shadow: 0 0 10px rgb(192, 191, 191);
+    border-radius: 10px;
+    font-size: 20px; 
+    font-family: "Montserrat Medium";
+    margin-bottom: 20px;
+    padding: 10px 68px 10px 5px;
+}
+
+.mail:hover, .phone:hover{
+    border: 1px solid #223ac2;
+    box-shadow: 0 0 10px #223ac2;
+}
+
+.bookbtn{
+    border: 1px solid rgb(192, 191, 191);
+    box-shadow: 0 0 10px rgb(192, 191, 191);
+    background-color: white;
+    border-radius: 10px;
+    color: #223ac2;
+    cursor: pointer;
+    font-size: 20px; 
+    font-family: "Montserrat Medium";
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+}
+
+.bookbtn:hover{
+    border: 1px solid white;
+    color: white;
+    background-color: #223ac2;
+}
+
+/********************** FOOTER **************************/
+
+footer {
+    background-color: rgb(226, 226, 226);
+}
+
+.foot {
+    margin: 675px 5% 00px 5%;
+    padding: 4%;
+    width: 90%;
+}
+
+.col1 {
+    text-align: left;
+    /* padding-right: 40px; */
+}
+
+.foot h4{
+    color:black; 
+    font-family: 'Sriracha', cursive; 
+    font-weight: 400;
+    text-align: left;
+    margin-top: 0;
+}
+
+.foot p {
+    color: rgb(87, 86, 86);
+    font-family: "Montserrat Medium";
+    font-size: 18px;
+    margin: 5px;
+}
+
+.col2, .col3, .col4 {
+    color: rgb(87, 86, 86);
+    font-family: "Montserrat Medium";
+    text-align: left;
+    /* padding-right: 30px; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

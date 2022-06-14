@@ -19,16 +19,16 @@
 </head>
 <body>
 
-    <header>
+    <header id="header">
         
         <h1>HOTEL SILA</h1>
         
         <nav>
             <ul>
-                <li class="list lineUp"><a class="list-href" href="#">Home</a></li>
-                <li class="list lineUp"><a class="list-href" href="#">About</a></li>
-                <li class="list lineUp"><a class="list-href" href="#">booking</a></li>
-                <li class="list lineUp"><a class="list-href" href="#">Contact</a></li>
+                <li class="list lineUp"><a class="list-href" href="#header">Home</a></li>
+                <li class="list lineUp"><a class="list-href" href="#fourth-pg">About US</a></li>
+                <li class="list lineUp"><a class="list-href" href="#booking-form">booking</a></li>
+                <li class="list lineUp"><a class="list-href" href="#foot">Contact</a></li>
             </ul>
         </nav>
 
@@ -92,7 +92,7 @@
         </div>
     </header>
 
-    <div class="middle">
+    <div class="middle" id="middle-of-page">
         <div class="first-table">
             <table>
                 <tr>
@@ -113,7 +113,7 @@
             </table>
         </div>
         <div class="second-table" >
-            <table style="margin-bottom: 50px;>
+            <table style="margin-bottom: 50px;">
                 <tr>
                     <td class="travel" style="padding-left: 0px;">
                         <div data-aos="fade-down" data-aos-duration="1000">
@@ -160,10 +160,154 @@
     </div>
 
     <div class="third-page">
-        <video autoplay muted playsinline loop>
+        <video autoplay muted playsinline loop style="margin-bottom: 50px;"">
             <source src="videos/snow.mp4" type="video/mp4">
         </video>
     </div>
+
+    <div class="fourth-page" id="fourth-pg">
+        <table>
+            <tr>
+                <td>
+                    <div data-aos="fade-right" data-aos-duration="400">
+                        <p class="facilities">
+                            Facilities we provide
+                        </p>
+                    </div>
+                <td>
+                    <div data-aos="fade-right" data-aos-duration="800">
+                        <p class="adventuer">
+                            We combine forward-thinking design and 
+                            game-changing technology to develop amazing digital products.
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="container" data-aos="fade-right" data-aos-duration="1200">
+                        <img src="images/travelplan.jpg" alt="travelplan" class="image" 
+                        style="
+                            width:450px; 
+                            height: 500px;">
+                        <div class="overlay">
+                            <div class="text">We Plan Your Trip</div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="container adven" data-aos="fade-right" data-aos-duration="1200">
+                        <img src="images/adventuer.jpg" alt="adventuer" class="image" 
+                        style="
+                            width:450px; 
+                            height: 500px;">
+                        <div class="overlay">
+                            <div class="text">Safe Adventure</div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="bokking" data-aos="fade-right" data-aos-duration="1000">
+        <form action="" id="booking-form">
+            <h2>Make Your Reservation</h2>
+            <input class="country" type="text" placeholder="Country, ZIP, City..."><br>
+            <table style="margin-top: 40px;">
+                <tr class="check">
+                    <td class="checkin">
+                        <label for="" class="checkinlable" ">Check In</label>
+                        <br>
+                        <input type="date" class="checkindate">
+                    </td>
+                    <td class="checkout">
+                        <label for="" class="checkoutlable">Check Out</label>
+                        <br>
+                        <input type="date" class="checkoutdate">
+                    </td>
+                </tr>
+            </table>
+            
+            <table>
+                <tr>
+                    <td>
+                        <select name="" id="" class="rooms">
+                            <option value="" selected hidden>no of rooms</option>
+                            <option value="">01</option>
+                            <option value="">02</option>
+                            <option value="">03</option>
+                            <option value="">04</option>
+                            <option value="">05</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="" id="" class="adults">
+                            <option value="" selected hidden>no of adults</option>
+                            <option value="">01</option>
+                            <option value="">02</option>
+                            <option value="">03</option>
+                            <option value="">04</option>
+                            <option value="">05</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="" id="" class="children">
+                            <option value="" selected hidden>no of children</option>
+                            <option value="">01</option>
+                            <option value="">02</option>
+                            <option value="">03</option>
+                            <option value="">04</option>
+                            <option value="">05</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <td>
+                        <input class="mail" type="email" placeholder="Enter Your Email">
+                    </td>
+                    <td>
+                        <input class="phone" type="text" placeholder="Enter Your Phone NO">
+                    </td>
+                </tr>
+            </table>
+            
+            <button class="bookbtn">BOOK NOW</button>
+        </form>
+        
+    </div>
+
+    <footer>
+        <table class="foot" id="foot">
+            <tr>
+                <td class="col1">
+                    <h4>HOTEL SILA</h4>
+                    <p>copyright &copy; 2022</p>
+                    <p>Built with love in Sri Lanka</p>
+                </td>
+                <td class="col2">
+                    <p style="font-size: 25px; margin-bottom: 20px;">Contact</p>
+                    <p>Email: shamaldissanayaka@gmail.com</p>
+                    <p>Tel: +94715258410</p>
+                </td>
+                <td class="col3">
+                    <p style="font-size: 25px; margin-bottom: 20px;">Social</p>
+                    <p>Instergram</p>
+                    <p>Twitter</p>
+                </td>
+                <td class="col4">
+                    <p style="font-size: 25px; margin-bottom: 20px;">Address</p>
+                    <p>No:123, cinnamon garden,</p>
+                    <p>Colombo, Sri Lanka</p>
+                </td>
+            </tr>
+        </table>
+    </footer>
+    
+    
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" ></script>
     <script>
